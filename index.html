@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tender Trade d.o.o. – strojne inštalacije, inženiring, adaptacije in razvoj nepremičninskih projektov.">
+  <title>Tender Trade d.o.o. | Gradimo. Razvijamo. Investiramo.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#141414;--paper:#f5f4f0;--white:#fff;--muted:#77746e;--line:#d8d5ce;--accent:#9a7a55;--dark:#171918}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--ink);background:var(--paper)}
+    img{display:block;width:100%;height:100%;object-fit:cover}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
+    header{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(245,244,240,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,20,20,.08)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;letter-spacing:.18em;font-size:15px}.brand span{display:block;font-weight:500;font-size:8px;letter-spacing:.32em;margin-top:4px;color:var(--muted)}
+    .navlinks{display:flex;gap:28px}.navlinks a{color:inherit;text-decoration:none;font-size:13px;font-weight:600}.cta{padding:11px 16px;border:1px solid var(--ink)}
+    .hero{min-height:94vh;position:relative;display:flex;align-items:end;background:#222;overflow:hidden}.hero img{position:absolute;inset:0}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.66),rgba(0,0,0,.10) 68%),linear-gradient(0deg,rgba(0,0,0,.35),transparent 55%)}
+    .hero-copy{position:relative;z-index:2;color:#fff;padding:170px 0 82px;max-width:790px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:700;margin-bottom:22px}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(48px,7vw,92px);line-height:.98;margin:0 0 24px;letter-spacing:-.03em}.hero p{font-size:18px;line-height:1.7;max-width:680px;color:rgba(255,255,255,.88)}
+    .hero-actions{display:flex;gap:12px;margin-top:32px}.btn{display:inline-block;text-decoration:none;padding:14px 20px;font-size:13px;font-weight:700}.btn-light{background:#fff;color:#111}.btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff}
+    section{padding:110px 0}.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;margin-bottom:54px}.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--accent)}
+    h2{font-family:"Playfair Display",serif;font-size:clamp(34px,4.5vw,58px);line-height:1.05;margin:0}.lead{font-size:17px;line-height:1.8;color:#555;max-width:690px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.service{padding:34px 34px 34px 0;border-bottom:1px solid var(--line)}.service+ .service{padding-left:34px;border-left:1px solid var(--line)}
+    .num{font-size:11px;color:var(--accent);font-weight:700}.service h3{font-size:21px;margin:40px 0 14px}.service p{color:#68655f;line-height:1.7;font-size:14px}
+    .dark{background:var(--dark);color:#fff}.dark .lead{color:#b8b8b5}.project-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.project{position:relative;min-height:530px;overflow:hidden;background:#333}.project.small{min-height:256px}.stack{display:grid;gap:18px}
+    .project:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent 58%)}.project-info{position:absolute;z-index:2;left:28px;right:28px;bottom:26px}.project-info span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#ddd}.project-info h3{font-size:30px;margin:8px 0 0}
+    .engineering-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:14px}.tile{overflow:hidden;background:#ddd}
+    .reference-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-bottom:18px}.reference-cover{position:relative;min-height:520px;overflow:hidden;background:#ddd}.reference-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.68),transparent 55%)}.reference-caption{position:absolute;z-index:2;left:28px;right:28px;bottom:26px;color:#fff}.reference-caption span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#eee}.reference-caption h3{font-size:32px;margin:8px 0 0}.video-stack{display:grid;grid-template-rows:1fr 1fr;gap:18px}.video-card{position:relative;min-height:250px;background:#111;overflow:hidden}.video-card video{width:100%;height:100%;object-fit:cover;display:block;background:#111}.video-label{position:absolute;left:18px;bottom:16px;background:rgba(17,17,17,.76);color:#fff;padding:8px 11px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;pointer-events:none}.reference-videos{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:46px}.reference-videos .video-card{height:330px}.tile:nth-child(1){grid-column:span 7;grid-row:span 2}.tile:nth-child(2){grid-column:span 5}.tile:nth-child(3){grid-column:span 5}.tile:nth-child(4){grid-column:span 4}.tile:nth-child(5){grid-column:span 8}
+    .story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.story-img{height:600px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:38px}.fact{padding-top:16px;border-top:1px solid var(--line)}.fact b{display:block;font-size:25px;margin-bottom:5px}.fact span{font-size:12px;color:var(--muted)}
+    .contact{background:#e9e5dc}.contactbox{display:grid;grid-template-columns:1.25fr .75fr;gap:60px}.contact h2{max-width:760px}.contact a{color:inherit}.contact-details{align-self:end;font-size:14px;line-height:2}
+    footer{padding:28px 0;background:#111;color:#aaa;font-size:11px}.footerline{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:800px){.navlinks a:not(.cta){display:none}.wrap{width:min(100% - 28px,1180px)}.hero{min-height:84vh}.hero-copy{padding-bottom:55px}.section-head,.story,.contactbox{grid-template-columns:1fr}.services{grid-template-columns:1fr}.service+ .service{padding-left:0;border-left:0}.project-grid{grid-template-columns:1fr}.project{min-height:430px}.project.small{min-height:300px}.engineering-grid{display:grid;grid-template-columns:1fr;grid-auto-rows:280px}.tile:nth-child(n){grid-column:auto;grid-row:auto}.reference-feature,.reference-videos{grid-template-columns:1fr}.reference-cover{min-height:390px}.video-stack{grid-template-rows:none;grid-template-columns:1fr}.video-card,.reference-videos .video-card{height:300px}.story-img{height:430px}section{padding:78px 0}.footerline{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav>
+    <div class="brand">TENDER TRADE<span>INŽENIRING & INVESTICIJE</span></div>
+    <div class="navlinks"><a href="#o-nas">O nas</a><a href="#storitve">Storitve</a><a href="#projekti">Projekti</a><a href="#reference">Reference</a><a class="cta" href="#kontakt">Kontakt</a></div>
+  </nav></div>
+</header>
+
+<main>
+<section class="hero">
+  <img src="assets/trzaska-living.jpg" alt="Tržaška Living">
+  <div class="wrap hero-copy">
+    <div class="eyebrow">Tender Trade d.o.o. · Ljubljana</div>
+    <h1>Gradimo.<br>Razvijamo.<br>Investiramo.</h1>
+    <p>Od zahtevnih strojnih inštalacij in celovitih adaptacij do inženiringa ter razvoja lastnih nepremičninskih projektov.</p>
+    <div class="hero-actions"><a class="btn btn-light" href="#projekti">Naši projekti</a><a class="btn btn-ghost" href="#storitve">Kaj delamo</a></div>
+  </div>
+</section>
+
+<section id="o-nas">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">O podjetju</div></div>
+   <div><h2>Iz izvedbe v celovit razvoj projektov.</h2><p class="lead">Tender Trade združuje tehnično znanje strojnih inštalacij z izkušnjami pri vodenju, izvedbi in razvoju nepremičninskih projektov. V zadnjih letih smo dejavnost razširili na celovit inženiring, adaptacije stanovanj in hiš ter lastne investicijske projekte.</p></div>
+  </div>
+  <div class="story">
+    <div class="story-img"><img src="assets/izveden-objekt.jpg" alt="Izveden sodoben stanovanjski objekt"></div>
+    <div>
+      <div class="kicker">Od ideje do izvedbe</div>
+      <h2 style="margin-top:16px">En partner.<br>Več strok.</h2>
+      <p class="lead">Na projekt gledamo celovito: od tehničnih rešitev in koordinacije izvajalcev do izvedbe, zaključnih del in razvoja končnega produkta.</p>
+      <div class="facts"><div class="fact"><b>3</b><span>ključna področja delovanja</span></div><div class="fact"><b>12+</b><span>let razvoja inženiring dejavnosti</span></div></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section id="storitve" style="padding-top:30px">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">Storitve</div></div><div><h2>Tehnična izvedba in projektno vodenje pod eno streho.</h2></div></div>
+  <div class="services">
+   <article class="service"><span class="num">01</span><h3>Strojne inštalacije</h3><p>Ogrevanje in hlajenje, toplotne črpalke, talno in stropno ogrevanje/hlajenje, vodovod, prezračevanje, rekuperacija ter izvedba tehničnih prostorov.</p></article>
+   <article class="service"><span class="num">02</span><h3>Inženiring & adaptacije</h3><p>Celovite prenove stanovanj in hiš, koordinacija izvajalcev, tehnične rešitve ter vodenje izvedbe od začetka do predaje.</p></article>
+   <article class="service"><span class="num">03</span><h3>Razvoj & investicije</h3><p>Razvoj stanovanjskih projektov prek projektnih družb, od zasnove in organizacije gradnje do dokončanja in predaje nepremičnin.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="projekti">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">Izbrani projekti</div></div><div><h2>Projekti, kjer prevzamemo širšo odgovornost.</h2><p class="lead">Za posamezne nepremičninske investicije Tender Trade uporablja projektne družbe, prilagojene konkretnemu projektu.</p></div></div>
+  <div class="project-grid">
+    <article class="project"><img src="assets/trzaska-living.jpg" alt="Tržaška Living"><div class="project-info"><span>Večstanovanjski objekt · Ljubljana</span><h3>Tržaška Living</h3></div></article>
+    <div class="stack">
+      <article class="project small"><img src="assets/medena.jpg" alt="Medena"><div class="project-info"><span>Stanovanjski projekt</span><h3>Medena</h3></div></article>
+      <article class="project small"><img src="assets/medena-2.jpg" alt="Medena 2"><div class="project-info"><span>Vrstne hiše</span><h3>Medena 2</h3></div></article>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section id="reference">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">Strojne inštalacije</div></div><div><h2>Kar je skrito v objektu, je enako pomembno kot to, kar se vidi.</h2><p class="lead">Izvedba zahtevnih sistemov ogrevanja, hlajenja, prezračevanja in energetskih rešitev za stanovanjske objekte.</p></div></div>
+  <div class="reference-feature">
+    <article class="reference-cover">
+      <img src="assets/vila-rozna-dolina.jpg" alt="Vila Rožna dolina v Ljubljani">
+      <div class="reference-caption"><span>Stanovanjski objekt · Ljubljana</span><h3>Vila Rožna dolina</h3></div>
+    </article>
+    <div class="video-stack">
+      <div class="video-card"><video controls playsinline preload="metadata" src="assets/video/rozna-dolina-interier.mov"></video><div class="video-label">Interier · Rožna dolina</div></div>
+      <div class="video-card"><video controls playsinline preload="metadata" src="assets/video/rozna-dolina-kopalnica.mov"></video><div class="video-label">Kopalnica · Vila Rožna dolina</div></div>
+    </div>
+  </div>
+  <div class="reference-videos">
+    <div class="video-card"><video controls playsinline preload="metadata" src="assets/video/kotlovnica-portoroz.mov"></video><div class="video-label">Kotlovnica · Portorož</div></div>
+    <div class="video-card"><video controls playsinline preload="metadata" src="assets/video/talno-gretje.mov"></video><div class="video-label">Talno gretje</div></div>
+  </div>
+  <div class="engineering-grid">
+   <div class="tile"><img src="assets/stropno-hlajenje.jpg" alt="Stropno hlajenje v AB plošči"></div>
+   <div class="tile"><img src="assets/kotlovnica.jpg" alt="Kotlovnica s toplotno črpalko"></div>
+   <div class="tile"><img src="assets/rekuperacija.jpg" alt="Rekuperacija v AB plošči"></div>
+   <div class="tile"><img src="assets/medena-2-interier.jpg" alt="Sodoben interier"></div>
+   <div class="tile"><img src="assets/adaptacija-prej-potem.jpg" alt="Adaptacija kopalnice prej in potem"></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap story">
+   <div><div class="kicker">Celovita izvedba</div><h2 style="margin-top:16px">Tehnika, arhitektura in končni rezultat.</h2><p class="lead">Naš cilj ni samo izvedena posamezna faza, temveč kakovosten in funkcionalen objekt kot celota. Zato povezujemo tehnično znanje, organizacijo gradnje in občutek za končni produkt.</p></div>
+   <div class="story-img"><img src="assets/medena-2-interier-2.jpg" alt="Interier projekta Medena 2"></div>
+ </div>
+</section>
+
+<section class="contact" id="kontakt">
+ <div class="wrap contactbox">
+   <div><div class="kicker">Kontakt</div><h2 style="margin-top:16px">Imate projekt?<br>Pogovorimo se.</h2></div>
+   <div class="contact-details"><strong>Tender Trade d.o.o.</strong><br>Erbežnikova ulica 2, 1000 Ljubljana<br><a href="tel:+38641798152">+386 41 798 152</a><br><a href="mailto:info@tendertrade.si">info@tendertrade.si</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footerline"><span>© 2026 Tender Trade d.o.o.</span><span>Strojne inštalacije · Inženiring · Razvoj nepremičnin</span></div></footer>
+</body>
+</html>
